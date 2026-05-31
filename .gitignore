@@ -2,8 +2,6 @@
 node_modules
 .next
 .env.local
-*.key
-*.pem
-luizmeloDev
-luizmeloDev.pub
+chrome-extension/
+supabase/
 "@ | Out-File -FilePath .gitignore -Encoding utf8
