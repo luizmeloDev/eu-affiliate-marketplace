@@ -16,6 +16,7 @@ interface Product {
   status: string;
   created_at: string;
   affiliate_url: string;
+  image_url?: string;
 }
 
 export default function AdminPage() {
