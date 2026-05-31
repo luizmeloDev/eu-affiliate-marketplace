@@ -1,7 +1,8 @@
 @"
 node_modules
 .next
+.env
 .env.local
-chrome-extension/
-supabase/
+*.key
+*.pem
 "@ | Out-File -FilePath .gitignore -Encoding utf8
