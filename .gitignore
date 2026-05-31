@@ -1,0 +1,9 @@
+@"
+node_modules
+.next
+.env.local
+*.key
+*.pem
+luizmeloDev
+luizmeloDev.pub
+"@ | Out-File -FilePath .gitignore -Encoding utf8

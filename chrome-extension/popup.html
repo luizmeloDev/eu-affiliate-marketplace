@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 320px; margin: 0; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+    .popup { padding: 20px; }
+    h1 { font-size: 18px; margin: 0 0 16px; color: #1f2937; }
+    .field { margin-bottom: 14px; }
+    label { display: block; font-size: 12px; font-weight: 600; color: #4b5563; margin-bottom: 4px; }
+    input { width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; box-sizing: border-box; }
+    .btn { width: 100%; padding: 12px; background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
+    .btn:hover { opacity: 0.9; }
+    .saved { color: #10b981; font-size: 13px; margin-top: 10px; text-align: center; display: none; }
+    .info { background: #f3f4f6; padding: 12px; border-radius: 8px; font-size: 13px; color: #4b5563; margin-bottom: 16px; }
+    .info strong { color: #1f2937; }
+  </style>
+</head>
+<body>
+  <div class="popup">
+    <h1>⚙️ Configurações</h1>
+    <div class="info">
+      <strong>Como usar:</strong><br>
+      1. Navegue em qualquer loja<br>
+      2. Clique no botão 🛒 flutuante<br>
+      3. O produto será importado para seu site
+    </div>
+    <div class="field">
+      <label>URL da API</label>
+      <input type="text" id="apiUrl" placeholder="https://seusite.vercel.app/api">
+    </div>
+    <div class="field">
+      <label>API Key (opcional)</label>
+      <input type="text" id="apiKey" placeholder="sua-chave-secreta">
+    </div>
+    <button class="btn" id="saveBtn">💾 Salvar Configurações</button>
+    <div class="saved" id="saved">✅ Configurações salvas!</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
