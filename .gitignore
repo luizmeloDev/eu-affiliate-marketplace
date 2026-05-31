@@ -5,4 +5,4 @@ node_modules
 .env.local
 *.key
 *.pem
-"@ | Out-File -FilePath .gitignore -Encoding utf8
+"@ | Out-File -FilePath .gitignore -Encoding utf8 -Force
